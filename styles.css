@@ -1,0 +1,45 @@
+#logo {width: 200px;
+    height: auto;}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+      
+      .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        margin: 20px;
+      }
+      
+      .line {
+        width: 30px;
+        height: 3px;
+        background-color: #333;
+        margin: 3px 0;
+      }
+      
+      .menu {
+        display: none;
+      }
+      .menu.ative {
+        display: block;
+      }
+      
+      .menu ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      
+      .menu ul li {
+        padding: 10px;
+      }
+      
+      .menu ul li a {
+        text-decoration: none;
+        color: #333;
+      }
+      .menu-toggle.clicked + .menu {
+        display:block;
+      }
+      
