@@ -4,42 +4,22 @@
         margin: 0;
         font-family: Arial, sans-serif;
       }
-      
-      .menu-toggle {
-        display: flex;
-        flex-direction: column;
-        cursor: pointer;
-        margin: 20px;
-      }
-      
-      .line {
-        width: 30px;
-        height: 3px;
-        background-color: #333;
-        margin: 3px 0;
-      }
-      
-      .menu {
-        display: none;
-      }
-      .menu.ative {
-        display: block;
-      }
-      
-      .menu ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      
-      .menu ul li {
-        padding: 10px;
-      }
-      
-      .menu ul li a {
-        text-decoration: none;
-        color: #333;
-      }
-      .menu-toggle.clicked + .menu {
-        display:block;
-      }
-      
+.main-heading {
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+color: #333;
+}
+.image-container {
+  text-align: center;
+}
+.main-image {
+  width: 1900px;
+  height: auto;
+  padding: auto;
+  margin: 0%;
+}
+
+
