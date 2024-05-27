@@ -9,45 +9,65 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-      <div> 
-         <img src="/images/logo.png" alt="logo" id="logo"> 
-         
-          <body class="font-sans bg-gray-100">
- <div class="container mx-auto mt-8 flex items-center justify-end">
-   <div class="relative">
-     <div class="px-4 py-2 cursor-pointer" onclick="toggleMenu()">
-       <div class="h-2 w-8 bg-gray-800 mb-1"></div>
-       <div class="h-2 w-6 bg-gray-800 mb-1"></div>
-       <div class="h-2 w-4 bg-gray-800"></div>
-     </div>
-     <div class="hidden absolute bg-white shadow-md" id="myMenu">
-       <a href="/index.html" class="block px-4 py-2 text-gray-800 no-underline hover:bg-gray-100">Home</a>
-       <a href="/about.html" class="block px-4 py-2 text-gray-800 no-underline hover:bg-gray-100">About Us</a>
-       <a href="/contact.html" class="block px-4 py-2 text-gray-800 no-underline hover:bg-gray-100">Contacts</a>
-       <a href="portfolio.html" class="block px-4 py-2 text-gray-800 no-underline hover:bg-gray-100">Portfolio</a>
-     </div>
-   </div>
- </div> 
- <script>
-   function toggleMenu() {
-     var menu = document.getElementById("myMenu");
-     menu.style.display = (menu.style.display === "block") ? "none" : "block";
-   }
- </script>
-         
-       </div>
-       <div>
-        <center>
-          <h1 class="main-heading">NZIMUHA CONTRACT
-            <br> & <br>FABRICATORS</h1>
-        </center>
+  <div class="logo font-bold text-2xl"></div>
+  <style>
+      .hero {
+        position: relative;
+        height: 80vh;
+        background: url('/images/main.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Shadow effect */
+      }
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+  
+  <header class="bg-black text-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+      <div class="logo">
+        <img src="/images/logo.png" alt="NZIMUHA logo" class="h-11">
       </div>
-    </header>
+      <nav class="hidden md:flex space-x-4 ml-1">
+        <a href="/index.html" class="hover:text-yellow-500">Home</a>
+        <a href="/about.html" class="hover:text-yellow-500">About</a>
+        <a href="#" class="hover:text-yellow-500">Services</a>
+        <a href="portfolio.html" class="hover:text-yellow-500">Portfolio</a>
+        <a href="/contact.html" class="hover:text-yellow-500">Contact</a>
+      </nav>
+      </div>
+      <div class="flex space-x-2">
+        <a href="#" class="text-yellow-500 hover:text-yellow-400">Login</a>
+        <a href="#" class="bg-yellow-500 text-black font-bold py-1 px-3 rounded-full hover:bg-yellow-400">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="text-4xl font-bold mb-4">Building Dreams, Creating Reality</h1>
+      <p class="mb-4">At Nzimuha contract and fabricators, we are commited to delivering excellence in construction with quality and integrity.</p>
+      <a href="portfolio.html" class="bg-yellow-500 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out">Discover Our Services</a>
+    </div>
+  </section>
 <main>
-  <div class="image-container">
-  <img src="/images/mainimg.png" alt="image of two contractors in reflectors" class="main-image">
-</div>
+
 <article>
   <br>
   <h1 class="second-title">Embracing Excellence in Construction</h1>
@@ -100,6 +120,16 @@
     </a>
   </center>
   </div>
+  <section class="call-to-action py-8 bg-white text-center">
+    <h2 class="text-2xl font-bold mb-4">Ready to Start Your Project?</h2>
+    <p class="max-w-xl mx-auto text-gray-700 mb-4">Contact us today to discuss your construction needs and see how we can help bring your vision to life.</p>
+    <a href="contact.html" class="bg-black text-white font-bold py-2 px-4 rounded-full hover:bg-gray-800 transition duration-300 ease-in-out">Get in Touch</a>
+  </section>
+</main>
+
+<footer class="footer py-4 bg-black text-white text-center">
+  <p>&copy; 2024 NzimuHa Contract & Fabricators. All rights reserved.</p>
+
 </main>
 
 </body>
