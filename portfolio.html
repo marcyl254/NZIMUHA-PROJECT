@@ -1,21 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Construction Company</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.nzimuha</title>
+    <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+
 </head>
 <body>
-
-<!-- Hero Section -->
-<section class="bg-gray-900 text-white py-16">
-  <div class="container mx-auto px-4 text-center">
-    <h1 class="text-4xl font-bold mb-2">Our Portfolio</h1>
-    <p class="text-lg">Showcasing our best projects and achievements</p>
-  </div>
-</section>
+  <div class="logo font-bold text-2xl"></div>
+  <style>
+      .hero {
+        position: relative;
+        height: 80vh;
+        background: url('/images/WhatsApp\ Image\ 2024-05-01\ at\ 18.31.03.jpeg') no-repeat center center;
+        background-size: cover;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Shadow effect */
+      }
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+  
+  <header class="bg-gray-800 text-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+      <div class="logo">
+        <img src="/images/logo.png" alt="NZIMUHA logo" class="h-11">
+      </div>
+      <nav class="hidden md:flex space-x-4 ml-1">
+        <a href="/index.html" class="hover:text-yellow-500">Home</a>
+        <a href="/about.html" class="hover:text-yellow-500">About</a>
+        <a href="/services.html" class="hover:text-yellow-500">Services</a>
+        <a href="portfolio.html" class="hover:text-yellow-500">Portfolio</a>
+        <a href="/contact.html" class="hover:text-yellow-500">Contact</a>
+      </nav>
+      </div>
+      <div class="flex space-x-2">
+        <a href="#" class="text-yellow-500 hover:text-yellow-400">Login</a>
+        <a href="#" class="bg-yellow-500 text-black font-bold py-1 px-3 rounded-full hover:bg-yellow-400">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="text-4xl font-bold mb-4">Our Portfolio</h1>
+      <p class="mb-4">Showcasing our bestt projects and achievements.</p>
+      <a href="/services.html" class="bg-yellow-500 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out">Discover Our Services</a>
+    </div>
+  </section>
+<main>
 
 <!-- Portfolio Grid Section -->
 <section class="py-16 bg-gray-100">
@@ -23,7 +83,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Portfolio Item -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x300" alt="Project Image" class="w-full h-48 object-cover">
+        <img src="/images/WhatsApp Image 2024-05-01 at 18.25.18 (1).jpeg" alt="Project" class="w-full h-48 object-cover">
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">Residential Construction</h2>
           <p class="text-gray-700">High-quality residential buildings with modern amenities and sustainable designs.</p>
@@ -31,7 +91,7 @@
       </div>
       <!-- Portfolio Item -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x300" alt="Project Image" class="w-full h-48 object-cover">
+        <img src="/images/WhatsApp Image 2024-05-01 at 18.44.20.jpeg" alt="Project Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">Commercial Construction</h2>
           <p class="text-gray-700">Top-notch commercial properties that meet all business needs and standards.</p>
@@ -39,7 +99,7 @@
       </div>
       <!-- Portfolio Item -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x300" alt="Project Image" class="w-full h-48 object-cover">
+        <img src="/images/WhatsApp Image 2024-05-01 at 18.57.27.jpeg" alt="Project Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">Industrial Fabrication</h2>
           <p class="text-gray-700">State-of-the-art industrial fabrication facilities for various sectors.</p>
@@ -47,7 +107,7 @@
       </div>
       <!-- Portfolio Item -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x300" alt="Project Image" class="w-full h-48 object-cover">
+        <img src="/images/WhatsApp Image 2024-05-01 at 18.25.18 (2).jpeg" alt="Project Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">Renovation & Remodeling</h2>
           <p class="text-gray-700">Transforming old spaces into modern and functional areas.</p>
@@ -55,7 +115,7 @@
       </div>
       <!-- Portfolio Item -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x300" alt="Project Image" class="w-full h-48 object-cover">
+        <img src="/images/WhatsApp Image 2024-05-01 at 18.34.44.jpeg" alt="Project Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">Project Management</h2>
           <p class="text-gray-700">Efficient project management services ensuring timely and successful completion.</p>
@@ -63,7 +123,7 @@
       </div>
       <!-- Portfolio Item -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-        <img src="https://via.placeholder.com/400x300" alt="Project Image" class="w-full h-48 object-cover">
+        <img src="/images/WhatsApp Image 2024-05-01 at 18.31.03.jpeg" alt="Project Image" class="w-full h-48 object-cover">
         <div class="p-4">
           <h2 class="text-2xl font-bold mb-2">Consultation & Design</h2>
           <p class="text-gray-700">Expert consultation and design services for innovative and effective solutions.</p>
@@ -90,7 +150,7 @@
       </div>
       <div>
         <i class="fas fa-award text-yellow-500 text-6xl mb-2"></i>
-        <h3 class="text-2xl font-bold">20</h3>
+        <h3 class="text-2xl font-bold"></h3>
         <p class="text-gray-700">Awards Won</p>
       </div>
       <div>
@@ -106,31 +166,37 @@
 <footer class="bg-gray-900 text-white py-8">
   <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
     <div class="mb-8 md:mb-0">
-      <h3 class="text-xl font-bold mb-4">Construction Company</h3>
+      <h3 class="text-xl font-bold mb-4">Nzimuha Contract <br> & <br> Fabricators</h3>
       <p>Providing quality construction services with a focus on integrity, innovation, and sustainability.</p>
     </div>
     <div class="mb-8 md:mb-0">
       <h3 class="text-xl font-bold mb-4">Important Links</h3>
       <ul>
-        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
-        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
-        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Projects</a></li>
-        <li class="mb-2"><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+        <li class="mb-2"><a href="/index.html" class="text-gray-400 hover:text-white">Home</a></li> 
+        <li class="mb-2"><a href="/about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+        <li class="mb-2"><a href="/services.html" class="text-gray-400 hover:text-white">Services</a></li>
+        <li class="mb-2"><a href="/portfolio.html" class="text-gray-400 hover:text-white">Projects</a></li>
+        <li class="mb-2"><a href="/contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
       </ul>
     </div>
     <div>
       <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
       <div class="flex space-x-4">
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="/" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
         <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-envelope"></i></a>
-        <a href="#" class="text-gray-400 hover:text-white"><i class="fas fa-phone-alt"></i></a>
+        <a href="mailto:nzimuhacontractandfabricators@gmail.com" class="text-gray-400 hover:text-white"><i class="fas fa-envelope"></i></a>
+        <p><a href="tel:+254729600380" class="text-gray-400 hover:text-white">
+            <i class="fas fa-phone fa-1x"></i>
+          </a>+254-729 600 380</p>
       </div>
     </div>
   </div>
 </footer>
-
+<footer class="footer py-4 bg-black text-white text-center">
+    <p>&copy; 2024 NzimuHa Contract & Fabricators. All rights reserved.</p>
+  </footer>
 </body>
 </html>
+
