@@ -1,0 +1,40 @@
+#logo {width: 200px;
+    height: auto;}
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+.main-heading {
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+color: #333;
+}
+.image-container {
+  text-align: center;
+}
+.main-image {
+  width: 1800px;
+  height: auto;
+  padding: auto;
+  margin: 0%;
+}
+
+.first-subtitle {
+  font-family: "Roboto Condensed",Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #666666;
+}
+.second-subtitle {
+  font-family: "Roboto Condensed",Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #666666;
+}
+
+
+
+

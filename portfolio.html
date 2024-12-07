@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.nzimuha</title>
+    <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="logo font-bold text-2xl"></div>
+  <style>
+      .hero {
+        position: relative;
+        height: 80vh;
+        background: url('https://i.postimg.cc/zDpncKgr/Whats-App-Image-2024-05-01-at-18-31-03.jpg') no-repeat center center;
+        background-size: cover;
+      }
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5); /* Shadow effect */
+      }
+      .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+  
+  <header class="bg-gray-800 text-white shadow-md">
+    <div class="container mx-auto px-4 py-2 flex justify-between items-center">
+      <div class="flex items-center space-x-4">
+      <div class="logo">
+        <img src="https://i.postimg.cc/Zq5qPZC8/black-logo-removebg-preview.png" alt="NZIMUHA logo" class="h-11">
+      </div>
+      <nav class="hidden md:flex space-x-4 ml-1">
+        <a href="./index.html" class="hover:text-yellow-500">Home</a>
+        <a href="./about.html" class="hover:text-yellow-500">About</a>
+        <a href="./services.html" class="hover:text-yellow-500">Services</a>
+        <a href="./portfolio.html" class="hover:text-yellow-500">Portfolio</a>
+        <a href="./contact.html" class="hover:text-yellow-500">Contact</a>
+      </nav>
+      </div>
+      <div class="flex space-x-2">
+        <a href="#" class="text-yellow-500 hover:text-yellow-400">Login</a>
+        <a href="#" class="bg-yellow-500 text-black font-bold py-1 px-3 rounded-full hover:bg-yellow-400">Sign Up</a>
+      </div>
+    </div>
+  </header>
+  
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="text-4xl font-bold mb-4">Our Portfolio</h1>
+      <p class="mb-4">Showcasing our bestt projects and achievements.</p>
+      <a href="/services.html" class="bg-yellow-500 text-black font-bold py-2 px-4 rounded-full hover:bg-yellow-400 transition duration-300 ease-in-out">Discover Our Services</a>
+    </div>
+  </section>
+<main>
+
+<!-- Portfolio Grid Section -->
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/jd0rBn0M/Whats-App-Image-2024-05-01-at-18-25-18-1.jpg" alt="Project" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Residential Construction</h2>
+          <p class="text-gray-700">High-quality residential buildings with modern amenities and sustainable designs.</p>
+        </div>
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/Qt9Ryh6L/Whats-App-Image-2024-05-01-at-18-44-20.jpg" alt="Project Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Commercial Construction</h2>
+          <p class="text-gray-700">Top-notch commercial properties that meet all business needs and standards.</p>
+        </div>
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/90NwFPdw/Whats-App-Image-2024-05-01-at-18-57-27.jpg" alt="Project Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Industrial Fabrication</h2>
+          <p class="text-gray-700">State-of-the-art industrial fabrication facilities for various sectors.</p>
+        </div>
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/WbGPVpsT/Whats-App-Image-2024-05-01-at-18-25-18-2.jpg" alt="Project Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Renovation & Remodeling</h2>
+          <p class="text-gray-700">Transforming old spaces into modern and functional areas.</p>
+        </div>
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/L6nZQ7St/Whats-App-Image-2024-05-01-at-18-34-44.jpg" alt="Project Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Project Management</h2>
+          <p class="text-gray-700">Efficient project management services ensuring timely and successful completion.</p>
+        </div>
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/zDpncKgr/Whats-App-Image-2024-05-01-at-18-31-03.jpg" alt="Project Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Consultation & Design</h2>
+          <p class="text-gray-700">Expert consultation and design services for innovative and effective solutions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8">Explore Our Projects</h2>
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/QtfH0gnY/Whats-App-Image-2024-05-01-at-18-28-13.jpg" alt="Project" class="w-full h-48 object-cover">
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/C5ddtZ3h/Whats-App-Image-2024-05-01-at-18-40-18.jpg" alt="Project Image" class="w-full h-48 object-cover">
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/jd0rBn0M/Whats-App-Image-2024-05-01-at-18-25-18-1.jpg" alt="Project Image" class="w-full h-48 object-cover">
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/SN2JfMLV/Whats-App-Image-2024-05-01-at-18-33-37.jpg" alt="Project Image" class="w-full h-48 object-cover">
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/jSy2GYF7/Whats-App-Image-2024-05-01-at-18-57-27-1.jpg" alt="Project Image" class="w-full h-48 object-cover">
+      </div>
+      <!-- Portfolio Item -->
+      <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+        <img src="https://i.postimg.cc/G2mp88hF/Whats-App-Image-2024-05-01-at-18-40-23-1.jpg" alt="Project Image" class="w-full h-48 object-cover">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Achievements Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-8">Our Achievements</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <i class="fas fa-building text-yellow-500 text-6xl mb-2"></i>
+        <h3 class="text-2xl font-bold">50+</h3>
+        <p class="text-gray-700">Completed Projects</p>
+      </div>
+      <div>
+        <i class="fas fa-users text-yellow-500 text-6xl mb-2"></i>
+        <h3 class="text-2xl font-bold">100+</h3>
+        <p class="text-gray-700">Satisfied Clients</p>
+      </div>
+      <div>
+        <i class="fas fa-award text-yellow-500 text-6xl mb-2"></i>
+        <h3 class="text-2xl font-bold"></h3>
+        <p class="text-gray-700">Awards Won</p>
+      </div>
+      <div>
+        <i class="fas fa-hard-hat text-yellow-500 text-6xl mb-2"></i>
+        <h3 class="text-2xl font-bold">15+</h3>
+        <p class="text-gray-700">Years of Experience</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="bg-gray-900 text-white py-8">
+  <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="mb-8 md:mb-0">
+      <h3 class="text-xl font-bold mb-4">Nzimuha Contract <br> & <br> Fabricators</h3>
+      <p>Providing quality construction services with a focus on integrity, innovation, and sustainability.</p>
+    </div>
+    <div class="mb-8 md:mb-0">
+      <h3 class="text-xl font-bold mb-4">Important Links</h3>
+      <ul>
+        <li class="mb-2"><a href="./index.html" class="text-gray-400 hover:text-white">Home</a></li> 
+        <li class="mb-2"><a href="./about.html" class="text-gray-400 hover:text-white">About Us</a></li>
+        <li class="mb-2"><a href="./services.html" class="text-gray-400 hover:text-white">Services</a></li>
+        <li class="mb-2"><a href="./portfolio.html" class="text-gray-400 hover:text-white">Projects</a></li>
+        <li class="mb-2"><a href="./contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="text-xl font-bold mb-4">Get in Touch</h3>
+      <div class="flex space-x-4">
+        <a href="/" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+        <a href="mailto:nzimuhacontractandfabricators@gmail.com" class="text-gray-400 hover:text-white"><i class="fas fa-envelope"></i></a>
+        <p><a href="tel:+254729600380" class="text-gray-400 hover:text-white">
+            <i class="fas fa-phone fa-1x"></i>
+          </a>+254-729 600 380</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<footer class="footer py-4 bg-black text-white text-center">
+    <p>&copy; 2024 NzimuHa Contract & Fabricators. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
